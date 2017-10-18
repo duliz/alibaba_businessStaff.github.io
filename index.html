@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/blue.css">
+        <script src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/echarts.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+           <div class="foot_head"></div>
+           
+          
+           
+              
+				<!--生意参谋数据分析-->
+				  <div class="modular">
+                    <h2>仿阿里巴巴生意参谋</h2>
+                    <div class="subject">
+                       <p class="subTitle">
+                       	访客分布-时段分布
+                       </p>
+                       <div class="list_opt clear">
+                       		<p class="fl">时段分布</p>
+                       		<div class="fr drop_box">
+                       			<div class="date">
+                       				日期
+                       				
+								
+                       			</div>
+                       			<div>2017-09-25~2017-09-25</div>
+                       			<div class="ter">终端</div>
+                       			<div class="download">下载</div>
+                       		</div>
+                       </div>
+                       <div class="echa">
+                       		<div id="tdCharts" style="width:100%;height:100%">
+                       			
+                       		</div>
+
+                       </div>
+                       <p class="subTitle">
+                       	访客分布-地域分布
+                       </p>
+                       <div class="list_opt clear">
+                       		<p class="fl">地域分布</p>
+                       		<div class="fr drop_box">
+                       			<div class="date">
+                       				日期
+                       				
+								
+                       			</div>
+                       			<div>2017-09-25~2017-09-25</div>
+                       			<div class="ter">终端</div>
+                       			<div class="download">下载</div>
+                       		</div>
+                        </div>
+                        <div class="map_tab">
+                        	<ul class="clear">
+                        		<li class="fl active">访客数占比排行TOP10</li>
+                        		<li class="fl">下单买家数排行TOP10</li>
+                        	</ul>
+                        </div>
+                        <div class="switch_tab">
+	                        <div class="clear ema visit">
+								<div class="echa_map fl">
+		                       		<div id="mapCharts" style="width:100%;height:100%">
+		                       			
+		                       		</div>
+
+		                       </div>
+		                       <div class="data_anly fr">
+		                       		<ul class="anTitle clear">
+		                       			<li class="fl tx_h">地域</li>
+		                       			<li class="fl"></li>
+		                       			<li class="fl sp tx_h">访客数</li>
+		                       			<li class="fl tx_h">下单转化率</li>
+		                       		</ul>
+		                       		<ul class="anData">
+		                       			<li class="clear">
+		                       				<p class="fl tx_h">广东省</p>
+		                       				<p class="fl tx-r n tx_h">1043</p>
+		                       				<p class="fl sp"><span class="iData top1" style="width:80%"></span></p>
+		                       				<p class="fl tx-c tx_h">2.90%</p>
+		                       			</li>
+		                       			<li class="clear">
+		                       				<p class="fl tx_h">广东省</p>
+		                       				<p class="fl tx-r n tx_h">1043</p>
+		                       				<p class="fl sp"><span class="iData top2" style="width:80%"></span></p>
+		                       				<p class="fl tx-c tx_h">2.90%</p>
+		                       			</li>
+		                       		</ul>
+		                       </div>
+	                       </div>
+	                        <div class="clear ema deal" style="display:none">
+								<div class="echa_map fl">
+		                       		<div id="mapCharts2" style="width:100%;height:100%">
+		                       			
+		                       		</div>
+
+		                       </div>
+		                       <div class="data_anly fr">
+		                       		<ul class="anTitle clear">
+		                       			<li class="fl tx_h">地域</li>
+		                       			<li class="fl"></li>
+		                       			<li class="fl sp tx_h">下单买家数</li>
+		                       			<li class="fl tx_h">下单转化率</li>
+		                       		</ul>
+		                       		<ul class="anData">
+		                       			<li class="clear">
+		                       				<p class="fl tx_h">广东省</p>
+		                       				<p class="fl tx-r n tx_h">1043</p>
+		                       				<p class="fl sp"><span class="iData top1" style="width:80%"></span></p>
+		                       				<p class="fl tx-c tx_h">2.90%</p>
+		                       			</li>
+		                       			<li class="clear">
+		                       				<p class="fl tx_h">广东省</p>
+		                       				<p class="fl tx-r n tx_h">1043</p>
+		                       				<p class="fl sp"><span class="iData top2" style="width:80%"></span></p>
+		                       				<p class="fl tx-c tx_h">2.90%</p>
+		                       			</li>
+		                       		</ul>
+		                       </div>
+	                       </div>
+                       </div>
+                        <p class="subTitle">访客分布-特征分布</p>
+                        <div class="clear bg_w">
+                        <div class="tao">
+                        	<div class="tao_title">
+                        		淘气值分布<i class="icon-question-sign iqs t"></i>
+                        	</div>
+                        	<div>
+	                       		<ul class="visitor_title clear">
+	                       			<li class="fl t tx_h">淘气值</li>
+	                       			<li class="fl f tx_h">访客数</li>
+	                       			<li class="fl e tx_h"></li>
+	                       			<li class="fl z tx_h">占比</li>
+	                       			<li class="fl r tx_h">下单转化率</li>
+	                       		</ul>
+	                       		<ul class="visitor_data">
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">广东省</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">广东省</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       		</ul>
+	                       </div>
+                        </div>
+                        <!-- 消费层级 -->
+                         <div class="consumption">
+                        	<div class="consum_title">
+                        		消费层级
+                        	</div>
+                        	<div class="">
+	                       		<ul class="visitor_title clear">
+	                       			<li class="fl t">消费层级(元)<i class="icon-question-sign iqs cc"></i></li>
+	                       			<li class="fl f tx_h">访客数</li>
+	                       			<li class="fl e tx_h"></li>
+	                       			<li class="fl z tx_h">占比</li>
+	                       			<li class="fl r tx_h">下单转化率</li>
+	                       		</ul>
+	                       		<ul class="visitor_data">
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">0000</p>
+	                       				<p class="fl f tx_h">1043000000000</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">0000</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       		</ul>
+	                       </div>
+                        </div>
+                        <!-- 性别 -->
+                        <div class="consumption">
+                        	<div class="consum_title">
+                        		性别<i class="icon-question-sign iqs s"></i>
+                        	</div>
+                        	<div class="">
+	                       		<ul class="visitor_title clear">
+	                       			<li class="fl t tx_h">性别</li>
+	                       			<li class="fl f tx_h">访客数</li>
+	                       			<li class="fl e tx_h"></li>
+	                       			<li class="fl z tx_h">占比</li>
+	                       			<li class="fl r tx_h">下单转化率</li>
+	                       		</ul>
+	                       		<ul class="visitor_data">
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">男</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">女</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">未知</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       		</ul>
+	                       </div>
+                        </div>
+                        <!-- 店铺新老访客 -->
+                        <div class="consumption">
+                        	<div class="consum_title">
+                        		店铺新老访客<i class="icon-question-sign iqs sc"></i>
+                        	</div>
+                        	<div class="clear">
+	                        	<div class="pie fl">
+	                        		<div id="myPie" style="width:100%;height:100%"></div>
+	                        	</div>
+	                        	<div class="pw fl">
+		                       		<ul class="pw_title clear">
+		                       		
+		                       			<li class="fl f tx_h">访客类型</li>
+		                       			<li class="fl e tx_h">访客数</li>
+		                       			<li class="fl z tx_h">占比</li>
+		                       			<li class="fl r tx_h">下单转化率</li>
+		                       		</ul>
+		                       		<ul class="pw_data">
+		                       			<li class="clear">
+		                       				<p class="fl t tx_h">0000</p>
+		                       				<p class="fl f tx_h">1043</p>
+		                       				<p class="fl f tx_h">1043</p>
+		                       				
+		                       				<p class="fl r tx_h">2.90%</p>
+		                       			</li>
+		                       			<li class="clear">
+		                       				<p class="fl t tx_h">0000</p>
+		                       				<p class="fl f tx_h">1043</p>
+		                       				<p class="fl f tx_h">1043</p>
+		                       				<p class="fl z tx_h">2.90%</p>
+		                       				
+		                       			</li>
+		                       		</ul>
+		                       </div>
+	                       </div>
+                        </div>
+                        </div>
+                        <!-- 访客分布-行为分布 -->
+                        <p class="subTitle">访客分布-行为分布</p>
+                        <div class="clear bg_w">
+                        	<!-- 来源关键词TOP5 -->
+                        	<div class="consumption">
+                        	<div class="consum_title">
+                        		来源关键词TOP5<i class="icon-question-sign iqs k"></i>
+                        	</div>
+                        	<div class="">
+	                       		<ul class="visitor_title clear">
+	                       			<li class="fl t tx_h">关键词</li>
+	                       			<li class="fl f tx_h">访客数</li>
+	                       			<li class="fl e tx_h"></li>
+	                       			<li class="fl z tx_h">占比</li>
+	                       			<li class="fl r tx_h">下单转化率</li>
+	                       		</ul>
+	                       		<ul class="visitor_data">
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">diy小屋xxxxxxxxx</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">diy小屋</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:80%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				<p class="fl r tx_h">2.90%</p>
+	                       			</li>
+	                       			
+	                       		</ul>
+	                       </div>
+                        </div>
+                        <!-- 浏览量分布 -->
+                        <div class="consumption">
+                        	<div class="consum_title">
+                        		浏览量分布<i class="icon-question-sign iqs wb"></i>
+                        	</div>
+                        	<div class="">
+	                       		<ul class="visitor_title clear">
+	                       			<li class="fl t tx_h">关键词</li>
+	                       			<li class="fl f tx_h">访客数</li>
+	                       			<li class="fl e tx_h"></li>
+	                       			<li class="fl z tx_h">占比</li>
+	                       			
+	                       		</ul>
+	                       		<ul class="visitor_data">
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">10</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:15%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       			
+	                       			</li>
+	                       			<li class="clear">
+	                       				<p class="fl t tx_h">0-1</p>
+	                       				<p class="fl f tx_h">1043</p>
+	                       				<p class="fl e tx_h"><span class="iData top1" style="width:5%"></span></p>
+	                       				<p class="fl z tx_h">2.90%</p>
+	                       				
+	                       			</li>
+	                       			
+	                       		</ul>
+	                       </div>
+                        </div>
+                        </div>
+                       <p class="subTitle">访客对比-消费层级</p>
+                       <div class="compare bg_w">
+                       		<ul class="compare_title clear">
+                       			<li class="fl"></li>
+                       			<li class="fl">
+                       				未支付访客(<em>1000</em>人)<i class="icon-question-sign iqs up"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付新买家(<em>1000</em>人)<i class="icon-question-sign iqs pn"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付老买家(<em>1000</em>人)<i class="icon-question-sign iqs po"></i>
+                       			</li>
+                       		</ul>
+                       		<!-- 消费层级 -->
+                       		<ul class="compare_data c clear">
+                       			<li class="fl">
+                       				<div class="dst">
+                       				<span class="iconw">
+                       				<i class="icon-jpy cj orange"></i>
+                       				</span>
+                       				<span class="btitle">消费层级(元)<i class="icon-question-sign iqs xf"></i></span>
+                       				</div>
+                       				
+                       			</li>
+                       			<li class="fl">
+                       				<span class="unshow">
+	                       				<i class="icon-minus-sign"></i>
+	                       				由于未支付访客未在本店消费，在本店无消费层级！
+                       				</span>
+                                    <!-- <div id="unpay" style="width:70%;height:40%"></div>
+                                    <div class="payCon clear">
+                                        <i class="xicon fl l"></i>
+                                        <span class="fr">
+                                            <i class="xicon m"></i>
+                                            <i class="xicon h"></i>
+                                        </span>
+                                    </div>
+                                     -->
+                       			</li>
+                       			<li class="fl">
+                       				
+                       				<div id="payNew" style="width:70%;height:40%"></div>
+                       				<div class="payCon clear">
+                       					<i class="xicon fl l"></i>
+                       					<span class="fr">
+	                       					<i class="xicon m"></i>
+	                       					<i class="xicon h"></i>
+                       					</span>
+                       				</div>
+                       			</li>
+                       			<li class="fl">
+                       				<div id="payOld" style="width:70%;height:40%"></div>
+                                    <div class="payCon clear">
+                                        <i class="xicon fl l"></i>
+                                        <span class="fr">
+                                            <i class="xicon m"></i>
+                                            <i class="xicon h"></i>
+                                        </span>
+                                    </div>
+                       			</li>
+                       		</ul>
+                       	 </div>
+						<!-- 性别 -->
+                       	<p class="subTitle">访客对比-性别</p>
+                        <div class="compare bg_w">
+                       		<ul class="compare_title clear">
+                       			<li class="fl"></li>
+                       			<li class="fl">
+                       				未支付访客(<em>1000</em>人)<i class="icon-question-sign iqs up"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付新买家(<em>1000</em>人)<i class="icon-question-sign iqs pn"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付老买家(<em>1000</em>人)<i class="icon-question-sign iqs po"></i>
+                       			</li>
+                       		</ul>                      		 
+                       		<ul class="compare_data s clear" id="cd">
+                       			<li class="fl">
+                       				<div class="dst">
+                       				<span class="iconw">
+                       				<i class="icon-group cj red"></i>
+                       				</span>
+                       				<span class="btitle">性别<i class="icon-question-sign iqs xb"></i></span>
+                       				</div>
+                       				<div class="dis_ib dsw">区别于其他两类访客，支付老买家中<em class="red">男人</em>占比居多</div>
+                       			</li>
+                       			<li class="fl pos_res">
+                       				<div class="line-data male">
+                       					<i class="icon-male"></i>
+                       					<p>20%</p>
+                       				</div>
+                       				<div class="line-data max-data">
+                       					<i class="icon-female"></i>
+                       					<p>15%</p>
+                       				</div>
+                       				<div class="line-data unknow">
+                       					<em>未知</em>
+                       					<p>65%</p>
+                       				</div>
+                       				<ul class="line clear">
+                       					<li style="width:20%"></li>
+                       					<li class="max-part" style="width:15%"></li>
+                       					<li style="width:65%"></li>
+                       				</ul>
+                       			</li>
+                       			<li class="fl pos_res">
+                                    <div class="line-data male">
+                                        <i class="icon-male"></i>
+                                        <p>20%</p>
+                                    </div>
+                                    <div class="line-data max-data">
+                                        <i class="icon-female"></i>
+                                        <p>15%</p>
+                                    </div>
+                                    <div class="line-data unknow">
+                                        <em>未知</em>
+                                        <p>65%</p>
+                                    </div>
+                                    <ul class="line clear">
+                                        <li style="width:20%"></li>
+                                        <li class="max-part" style="width:15%"></li>
+                                        <li style="width:65%"></li>
+                                    </ul>      
+                                </li>
+                       			<li class="fl pos_res">
+                                    <div class="line-data male">
+                                        <i class="icon-male"></i>
+                                        <p>20%</p>
+                                    </div>
+                                    <div class="line-data max-data">
+                                        <i class="icon-female"></i>
+                                        <p>65%</p>
+                                    </div>
+                                    <div class="line-data unknow">
+                                        <em>未知</em>
+                                        <p>15%</p>
+                                    </div>
+                                    <ul class="line clear">
+                                        <li style="width:20%"></li>
+                                        <li class="max-part" style="width:65%"></li>
+                                        <li style="width:15%"></li>
+                                    </ul>      
+                                </li>
+                       		</ul>
+                        </div>
+                       	<!-- 年龄 -->
+                       	<p class="subTitle">访客对比-年龄</p>
+                        <div class="compare bg_w">
+                       		<ul class="compare_title clear">
+                       			<li class="fl"></li>
+                       			<li class="fl">
+                       				未支付访客(<em>1000</em>人)<i class="icon-question-sign iqs up"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付新买家(<em>1000</em>人)<i class="icon-question-sign iqs pn"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付老买家(<em>1000</em>人)<i class="icon-question-sign iqs po"></i>
+                       			</li>
+                       		</ul>    
+                       		<ul class="compare_data o clear pos_res">
+                       			<li class="fl">
+                       				<div class="dst">
+                       				<span class="iconw">
+                       				<i class="icon-user cj green"></i>
+                       				</span>
+                       				<span class="btitle">年龄<i class="icon-question-sign iqs nl"></i></span>
+                       				</div>
+                       				<div class="dis_ib dsw">您的店铺属于<em class="green">青年之家(18-30岁)</em></div>
+                       			</li>
+                       			<li class="fl">
+                       				<div style="width:100%;height:100%" class="pos_res">
+	                       				<div id="ring1" style="width:100%;height:100%"></div>
+	                       				
+                       				</div>
+                       			</li>
+                       			<li class="fl">
+                       				<div style="width:100%;height:100%" class="pos_res">
+                                        <div id="ring2" style="width:100%;height:100%"></div>
+                                        
+                                    </div>
+                       			</li>
+                       			<li class="fl">
+                                    <div style="width:100%;height:100%" class="pos_res">
+                                        <div id="ring3" style="width:100%;height:100%"></div>
+                                        
+                                    </div>      
+                                </li>
+                       			<ul class="leng clear">
+                       				<li><i class="icon-stop" style="color:#97ce68"></i>18-25岁</li>
+                       				<li><i class="icon-stop" style="color:#a6d57f"></i>26-30岁</li>
+                       				<li><i class="icon-stop" style="color:#b6dd95"></i>31-35岁</li>
+                       				<li><i class="icon-stop" style="color:#c6e4ac"></i>36-40岁</li>
+                       				<li><i class="icon-stop" style="color:#d5ebc3"></i>41-50岁</li>
+                       				<li><i class="icon-stop" style="color:#e5f3d9"></i>51岁以上</li>
+                       				<li><i class="icon-stop" style="color:#f2f9eb"></i>蒙面侠</li>
+                       			</ul>
+                       		</ul>
+                       	</div>
+                       		<!-- 地域TOP -->
+                       	<p class="subTitle">访客对比-地域TOP</p>
+                        <div class="compare bg_w">
+                       		<ul class="compare_title clear">
+                       			<li class="fl"></li>
+                       			<li class="fl">
+                       				未支付访客(<em>1000</em>人)<i class="icon-question-sign iqs up"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付新买家(<em>1000</em>人)<i class="icon-question-sign iqs pn"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付老买家(<em>1000</em>人)<i class="icon-question-sign iqs po"></i>
+                       			</li>
+                       		</ul>    	
+                       		<ul class="compare_data p clear">
+                       			<li class="fl">
+                       				<div class="dst">
+                       				<span class="iconw">
+                       				<i class="icon-map-marker cj blueAgreen"></i>
+                       				</span>
+                       				<span class="btitle">地域TOP<i class="icon-question-sign iqs dy"></i></span>
+                       				</div>
+                       				<div class="dis_ib dsw">您的访客聚集在广东省<em class="blueAgreen">广东省</em></div>
+                       			</li>
+                       			<li class="fl">
+                       				<div class="clear hl">
+	                       				<p class="pcols pcols2 fl">广东省</p>
+	                       				<p class="pcols pcols3 fl tx-r">10.02%</p>
+	                       				<p class="pcols pcols3 fl tx-l"><span style="width:100%"></span></p>
+                       				</div>
+                       				
+                       				
+                       				<div class="clear hl">
+	                       				<p class="pcols pcols2 fl">广东省</p>
+	                       				<p class="pcols pcols3 fl tx-r">10.02%</p>
+	                       				<p class="pcols pcols3 fl tx-l"><span style="width:10%"></span></p>
+                       				</div>
+                       			</li>
+                       			<li class="fl">
+                       				<div class="clear hl">
+	                       				<p class="pcols pcols2 fl">广东省</p>
+	                       				<p class="pcols pcols3 fl tx-r">10.02%</p>
+	                       				<p class="pcols pcols3 fl tx-l"><span style="width:100%"></span></p>
+                       				</div>
+                       				
+                       				
+                       				<div class="clear hl">
+	                       				<p class="pcols pcols2 fl">广东省</p>
+	                       				<p class="pcols pcols3 fl tx-r">10.02%</p>
+	                       				<p class="pcols pcols3 fl tx-l"><span style="width:10%"></span></p>
+                       				</div>
+                       			</li>
+                       			<li class="fl">
+                                    <div class="clear hl">
+                                        <p class="pcols pcols2 fl">广东省</p>
+                                        <p class="pcols pcols3 fl tx-r">10.02%</p>
+                                        <p class="pcols pcols3 fl tx-l"><span style="width:100%"></span></p>
+                                    </div>
+                                    
+                                    
+                                    <div class="clear hl">
+                                        <p class="pcols pcols2 fl">广东省</p>
+                                        <p class="pcols pcols3 fl tx-r">10.02%</p>
+                                        <p class="pcols pcols3 fl tx-l"><span style="width:10%"></span></p>
+                                    </div>
+                       			</li>
+
+                       		</ul>
+                       	</div>
+                       		<!-- 营销偏好 -->
+                       	<p class="subTitle">访客对比-营销偏好</p>
+                        <div class="compare bg_w">
+                       		<ul class="compare_title clear">
+                       			<li class="fl"></li>
+                       			<li class="fl">
+                       				未支付访客(<em>1000</em>人)<i class="icon-question-sign iqs up"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付新买家(<em>1000</em>人)<i class="icon-question-sign iqs pn"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付老买家(<em>1000</em>人)<i class="icon-question-sign iqs po"></i>
+                       			</li>
+                       		</ul>    
+                       		<ul class="compare_data l clear">
+								<li class="fl">
+									<div class="dst">
+                       				<span class="iconw">
+
+                       				<i class="icon-gittip cj orange"></i>
+                       				</span>
+                       				<span class="btitle">营销偏好<i class="icon-question-sign iqs ph"></i></span>
+                       				</div>
+                       				<div class="dis_ib dsw">支付老买家更偏好<em class="orange">包邮</em></div>
+								</li>
+								<li class="fl pos_res cli">
+									<div class="circle"></div>	
+								</li>
+								<li class="fl pos_res cli">
+									<div class="circle"></div>
+								</li>
+								<li class="fl pos_res cli">
+									<div class="circle"></div>
+								</li>
+                       		</ul>
+                       	</div>
+                       		<!-- 关键词TOP -->
+                       	<p class="subTitle">访客对比-关键词TOP</p>
+                        <div class="compare bg_w">
+                       		<ul class="compare_title clear">
+                       			<li class="fl"></li>
+                       			<li class="fl">
+                       				未支付访客(<em>1000</em>人)<i class="icon-question-sign iqs up"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付新买家(<em>1000</em>人)<i class="icon-question-sign iqs pn"></i>
+                       			</li>
+                       			<li class="fl">
+                       				支付老买家(<em>1000</em>人)<i class="icon-question-sign iqs po"></i>
+                       			</li>
+                       		</ul>    
+                       		<ul class="compare_data k clear">
+                       			<li class="fl">
+                       				<div class="dst">
+                       				<span class="iconw">
+                       				<i class="icon-search cj blueAgreen"></i>
+                       				</span>
+                       				<span class="btitle">关键词TOP<i class="icon-question-sign iqs gjc"></i></span>
+                       				</div>
+                       				<div class="dis_ib dsw">未支付访客常搜<em class="blueAgreen">diy小屋</em></div>
+                       			</li>
+                       			<li class="fl">
+                       				<div class="kw">
+	                       				<p class="bw tx_h">diy小屋</p>
+	                       				<p class="bw tx_h">diy手工创意</p>
+	                       				<p class="bw tx_h">diy手工小屋</p>
+	                       				<p class="tx_h">手工diy小屋</p>
+	                       				<p class="tx_h">房子</p>
+                       				</div>
+                       			</li>
+                       			<li class="fl">
+                       				<div class="kw">
+	                       				<p class="bw tx_h">diy小屋</p>
+	                       				<p class="bw tx_h">diy手工创意</p>
+	                       				<p class="bw tx_h">diy手工小屋</p>
+	                       				<p class="tx_h">手工diy小屋</p>
+	                       				<p class="tx_h">房子</p>
+                       				</div>
+                       			</li>
+                       			<li class="fl">
+                                    <div class="kw">
+                                        <p class="bw tx_h">diy小屋</p>
+                                        <p class="bw tx_h">diy手工创意</p>
+                                        <p class="bw tx_h">diy手工小屋</p>
+                                        <p class="tx_h">手工diy小屋</p>
+                                        <p class="tx_h">房子</p>
+                                    </div>
+                                </li>
+                       		</ul> 
+                       	</div>
+                      	<!-- 店铺来源-构成 -->
+                      	<p class="subTitle">店铺来源-构成</p>
+                      	<div class="source bg_w">
+                      		<ul class="source_title clear">
+                      			<li class="fl source_flow">流量来源</li>
+                      			<li class="fl source_vcr">访客数</li>
+                      			<li class="fl source_ratio"></li>
+                      			<li class="fl source_vcr">下单买家数</li>
+                      			<li class="fl source_ratio"></li>
+                      			<li class="fl source_vcr">下单转化率</li>
+                      			<li class="fl source_ratio"></li>
+                      			<li class="fl source_operating">操作</li>
+                      		</ul>
+                      		<ul class="source_data clear">
+                      			<li class="fl">
+                      				<div class="clear source_data_show">
+                      					<p class="fl source_flow"><i class="icon-plus-sign pbtn"></i>付费流量</p>
+		                      			<p class="fl source_vcr">访客数</p>
+		                      			<p class="fl source_ratio">555<i class="icon-long-arrow-up"></i></p>
+		                      			<p class="fl source_vcr">下单买家数</p>
+		                      			<p class="fl source_ratio">565<i class="icon-long-arrow-down"></i></p>
+		                      			<p class="fl source_vcr">下单转化率</p>
+		                      			<p class="fl source_ratio">55<i class="icon-long-arrow-up"></i></p>
+		                      			<p class="fl source_operating"></p>
+                      				</div>
+                      				<ul class="source_data_hide">
+	                      				<li class="clear">
+	                      					<p class="fl source_flow"><span>直通车</span></p>
+			                      			<p class="fl source_vcr">访客数</p>
+			                      			<p class="fl source_ratio">5<i class="icon-long-arrow-down"></i></p>
+			                      			<p class="fl source_vcr">下单买家数</p>
+			                      			<p class="fl source_ratio">5<i class="icon-long-arrow-up"></i></p>
+			                      			<p class="fl source_vcr">下单转化率</p>
+			                      			<p class="fl source_ratio">5<i class="icon-long-arrow-up"></i></p>
+			                      			<p class="fl source_operating"></p>
+	                      				</li>
+                      				</ul>
+                      			</li>
+                      			
+
+                      		</ul>
+                      	</div>
+                    </div>
+                </div>
+				<!--生意参谋数据分析End-->
+             
+                
+                <div class="foot_head"></div>
+		</div>
+    </div>
+   		
+                <!--Tab标签js-->
+                <script type="text/javascript">$(document).ready(function() {
+                        jQuery.jqtab = function(tabtit, tab_conbox, shijian) {
+                            $(tab_conbox).find("li").hide();
+                            $(tabtit).find("li:first").addClass("thistab").show();
+                            $(tab_conbox).find("li:first").show();
+
+                            $(tabtit).find("li").bind(shijian,
+                            function() {
+                                $(this).addClass("thistab").siblings("li").removeClass("thistab");
+                                var activeindex = $(tabtit).find("li").index(this);
+                                $(tab_conbox).children().eq(activeindex).show().siblings().hide();
+                                return false;
+                            });
+
+                        };
+                        /*调用方法如下：*/
+                        $.jqtab("#tabs", "#tab_conbox", "click");
+
+                        $.jqtab("#tabs2", "#tab_conbox2", "mouseenter");
+
+                    });</script>
+                <!--Tab标签js End-->
+                <!--直通车报表js-->
+                <script>
+                function click_field() {
+                        //alert("111");
+                        if (document.getElementById("field_ul").style.display == "none") {
+                            $("#time_div").css("display", "none");
+                            $("#norm_ul").css("display", "none");
+                            $("#field_ul").css("display", "block");
+                        } else {
+                            $("#field_ul").css("display", "none");
+                        }
+                    }
+                    function click_norm() {
+                        if (document.getElementById("norm_ul").style.display == "none") {
+                            $("#field_ul").css("display", "none");
+                            $("#time_div").css("display", "none");
+                            $("#norm_ul").css("display", "block");
+                        } else {
+                            $("#norm_ul").css("display", "none");
+                        }
+                    }
+                    function click_time() {
+                        if (document.getElementById("time_div").style.display == "none") {
+                            $("#field_ul").css("display", "none");
+                            $("#norm_ul").css("display", "none");
+                            $("#time_div").css("display", "block");
+                        } else {
+                            $("#time_div").css("display", "none");
+                        }
+                    }
+                    function click_tra() {
+                        if (document.getElementById("tra_ul").style.display == "none") {
+                            $("#tra_ul").css("display", "block");
+                        } else {
+                            $("#tra_ul").css("display", "none");
+                        }
+                    }
+                    function hide_show() {
+
+                        if (document.getElementById("hi_sh_div").style.display == "none") {
+                            //$("#hi_sh_div").css("display","block");
+                            $("#hi_sh_div").show("3000");
+                            $("#i_hi_sw").html("∧");
+                        } else {
+                            // $("#hi_sh_div").css("display","none");
+                            $("#hi_sh_div").hide("3000");
+                            $("#i_hi_sw").html("∨");
+                        }
+                    }
+                    function click_tools() {
+
+                        if (document.getElementById("tools_div").style.display == "none") {
+                            $("#tools_div").show("1000");
+                        } else {
+                            $("#tools_div").hide("1000");
+                        }
+                    }
+                    </script>
+                <!--直通车报表js End-->
+                <!-- icheck样式美化 -->
+			<script type="text/javascript" src="js/icheck.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function(){
+			  	$('.drop_box_terminal').find("input").iCheck({
+			    checkboxClass:  'icheckbox_minimal-blue',
+			    //radioClass: 'iradio_minimal',
+			    increaseArea: '20%' // optional
+			  });
+			});
+
+			</script>
+			 <!-- icheck样式美化 End-->
+			
+			 <!-- 时间分布chart -->
+			 <script type="text/javascript">
+			 	var timeData=[];
+			 	var tyData=[];
+			 	var tyData1=[];
+			 	var res="";
+			 	for (var i = 1; i <=23; i++) {
+			 		timeData.push(i);
+			 		tyData.push(i*10*Math.random());
+			 		tyData1.push(i*10*Math.random());
+			 	};
+			 	
+			 	var myChart = echarts.init(document.getElementById('tdCharts'));
+			 	var option = {
+		           
+		            tooltip: {
+		            	trigger: 'axis',		     
+		            	formatter :function (params) { 
+		            		var res='<div><p>'+params[0].name+':00-'+params[0].name+':59'+'</p></div>' 
+							for(var i=0;i<params.length;i++){
+							if (i==0) {
+								res+='<p><span style="width:10px;height:10px;display:inline-block;background:#c23531;margin-right:5px"></span>'+params[i].seriesName+':'+params[i].data+'</p>'
+							}else{
+								res+='<p><span style="width:10px;height:10px;display:inline-block;background:#2f4554;margin-right:5px"></span>'+params[i].seriesName+':'+params[i].data+'</p>'
+							}
+							}
+							return res;
+						}
+						
+					},
+		            
+		          
+		            grid : {
+	                    left : '-2%',
+	                    right : '2%',
+	                    bottom : '10%',
+	                    top : '10%',
+	                    containLabel : true
+                	},
+                	
+		            xAxis: {
+
+		            	boundaryGap : false,
+		                data: timeData,
+		                axisLine : {
+                        	show : false
+                    	},
+	                    axisTick : {
+	                        show : false
+	                    },
+	                    splitLine:{
+	                    	show:false
+	                    },
+	                    axisPointer:{
+	                    	show:true,
+
+	                    },
+
+
+		            },
+		            yAxis: {
+		            	boundaryGap : false,
+		            	axisLine : {
+                        show : false
+                    },
+                    axisTick : {
+                        show : false
+                    },
+                    axisLabel : {
+                        show : false
+                    },
+                    splitLine : {
+                        lineStyle : {
+                            type : 'dashed'
+                        }
+                    }
+		            },
+		            series: [{
+		                name: '数据1',
+		                type: 'line',
+		                data: tyData,
+		                showSymbol: false,
+		            },{
+		                name: '数据2',
+		                type: 'line',
+		                data: tyData1,
+		                showSymbol: false,
+		            }]
+		        }
+				myChart.setOption(option);
+			 </script>
+			 <!-- 时间分布chart End-->
+			 <!-- 地图 -->
+			 <script type="text/javascript" src="js/china.js"></script>
+			 <script type="text/javascript">
+			 var ema=$(".switch_tab").children(".ema");
+			 	$(".map_tab").find("li").on("click",function(){
+			 		if ($(this).hasClass("active")) {
+			 			// $(this).removeClass("active");
+			 			// $(this).siblings("li").addClass("active");
+			 			var index=$(this).index();
+			 			//console.log(ema[index])
+			 			$(ema[index]).show();
+			 			$(ema[index]).siblings().hide();
+
+			 			
+			 		}else{
+			 			$(this).siblings("li").removeClass("active");
+			 			$(this).addClass("active");
+			 			var index=$(this).index();
+			 			$(ema[index]).show();
+			 			$(ema[index]).siblings().hide();
+			 			mapChart2.resize();
+
+			 			
+
+			 		}
+			 	});
+			
+
+			var mapChart = echarts.init(document.getElementById('mapCharts'));
+			function randomData() {
+			    return Math.round(Math.random()*1000);
+			}
+
+			var data = [
+			    {name: '北京', value: [randomData(), 0] },
+			    {name: '天津', value: [randomData(), 1] },
+			    {name: '上海', value: [randomData(), 2] },
+			    {name: '重庆', value: [randomData(), 3] },
+			    {name: '河北', value: [randomData(), 4] },
+			    {name: '河南', value: [randomData(), 5] },
+			    {name: '云南', value: [randomData(), 6] },
+			    {name: '广东', value: [randomData(), 7] },
+			    {name: '四川', value: [randomData(), 8] },
+			    {name: '江苏', value: [randomData(), 9] }
+			];
+
+			option = {
+
+			   backgroundColor:'#ffffff',
+			   tooltip: {
+			        trigger: 'item',
+			        backgroundColor :'#fcfcfc',
+			        borderColor :'#d4d4d4',
+			        padding :10,
+			        extraCssText: 'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);',
+			        textStyle :{
+			        	color :'#282828',
+			        	width :90,
+			        	lineHeight: 30,
+			            rich: {
+			                blue: {
+			                    fontSize: 13,
+			                    color: '#4eacea'
+			                },
+			                grey: {
+			                	fontSize: 12,
+			                    color: '#5d5d5e'
+			                }
+			            }
+			        },
+			        formatter: function(params) {
+			        	if(params.color=="#c23531"){
+			        		return;
+			        	}else{
+			        		return params.name+'<br/>'+'访客数:'+params.value+'<br/>'+'占比'
+			        	}
+			        	
+			        	
+			        },
+			    },
+			    visualMap: {
+			        type: 'piecewise',
+			        dimension: 1,
+			        pieces: [
+			            {value: 0, color: '#2062e6'},
+			            {value: 1, color: '#f3d024'},
+			            {value: 2, color: '#ff8533'},
+			            {value: 3, color: '#bbcff8'},
+			            {value: 4, color: '#bbcff8'},
+			            {value: 5, color: '#bbcff8'},
+			            {value: 6, color: '#bbcff8'},
+			            {value: 7, color: '#bbcff8'},
+			            {value: 8, color: '#bbcff8'},
+			            {value: 9, color: '#bbcff8'},
+			            {name: '南海诸岛', value: 10, itemStyle: {normal: {areaColor:'#ffffff',opacity: 0, label: {show: false}}}}
+			        ],
+			       
+			       show:false
+			    },
+			    series: [
+			        {
+			            name: '',
+			            type: 'map',
+			            mapType: 'china',
+			            roam: false,
+			            label: {
+			                normal: {
+			                    show: false
+			                },
+			                emphasis: {
+			                    show: false,
+			                   
+
+			                }
+			            },
+			            data: data,
+			             itemStyle: {
+			            normal: {
+			                areaColor: '#e8effd',
+			                borderColor: '#ffffff'
+			            },
+			            emphasis: {
+			                areaColor: '#33a0ff'
+			            }
+			        }
+			        }
+			    ],
+			    geo: {
+					map: 'china',
+					regions: [{
+						name: '南海诸岛', value: 0, 
+						itemStyle: {
+							normal: {
+								areaColor:'#ffffff',
+								opacity: 0, 
+								label: {show: false
+					}}}}],
+
+
+			}
+			};
+				mapChart.setOption(option);
+		<!-- 地图2-->
+				var mapChart2 = echarts.init(document.getElementById('mapCharts2'));
+				function randomData() {
+				    return Math.round(Math.random()*1000);
+				}
+
+				var data = [
+				    {name: '北京', value: [randomData(), 0] },
+				    {name: '天津', value: [randomData(), 1] },
+				    {name: '上海', value: [randomData(), 2] },
+				    {name: '重庆', value: [randomData(), 3] },
+				    {name: '河北', value: [randomData(), 4] },
+				    {name: '河南', value: [randomData(), 5] },
+				    {name: '云南', value: [randomData(), 6] },
+				    {name: '广东', value: [randomData(), 7] },
+				    {name: '四川', value: [randomData(), 8] },
+				    {name: '江苏', value: [randomData(), 9] }
+				];
+
+				option = {
+
+				   backgroundColor:'#ffffff',
+				   tooltip: {
+				        trigger: 'item',
+				        backgroundColor :'#fcfcfc',
+				        borderColor :'#d4d4d4',
+				        padding :15,
+				        extraCssText: 'box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);',
+				        textStyle :{
+				        	color :'#282828',
+				        	width :90,
+				        	lineHeight: 30,
+				            rich: {
+				                blue: {
+				                    fontSize: 13,
+				                    color: '#4eacea'
+				                },
+				                grey: {
+				                	fontSize: 12,
+				                    color: '#5d5d5e'
+				                }
+				            }
+				        },
+				        formatter: function(params) {
+				        	if(params.color=="#c23531"){
+				        		return;
+				        	}else{
+				        		return params.name+'<br/>'+'访客数'+'<br/>'+'占比'
+				        	}
+				        	
+				        	
+				        },
+				    },
+				    visualMap: {
+				        type: 'piecewise',
+				        dimension: 1,
+				        pieces: [
+				            {value: 0, color: '#2062e6'},
+				            {value: 1, color: '#f3d024'},
+				            {value: 2, color: '#ff8533'},
+				            {value: 3, color: '#bbcff8'},
+				            {value: 4, color: '#bbcff8'},
+				            {value: 5, color: '#bbcff8'},
+				            {value: 6, color: '#bbcff8'},
+				            {value: 7, color: '#bbcff8'},
+				            {value: 8, color: '#bbcff8'},
+				            {value: 9, color: '#bbcff8'},
+				            {name: '南海诸岛', value: 10, itemStyle: {normal: {areaColor:'#ffffff', label: {show: false}}}}
+				        ],
+				       
+				       show:false
+				    },
+				    series: [
+				        {
+				            name: '',
+				            type: 'map',
+				            mapType: 'china',
+				            roam: false,
+				            label: {
+				                normal: {
+				                    show: false
+				                },
+				                emphasis: {
+				                    show: false,
+				                   
+
+				                }
+				            },
+				            data: data,
+				             itemStyle: {
+				            normal: {
+				                areaColor: '#e8effd',
+				                borderColor: '#ffffff'
+				            },
+				            emphasis: {
+				                areaColor: '#33a0ff'
+				            }
+				        }
+				        }
+				    ],
+				    geo: {
+						map: 'china',
+						regions: [{
+							name: '南海诸岛', 
+							value: 0, 
+							itemStyle: {
+								normal: {
+									areaColor:'#ffffff',
+									opacity: 0, 
+									label: {show: false
+							}}}}],
+
+
+				}
+				};
+				mapChart2.setOption(option);
+				// setTimeout(function() {//自动调整echarts大小
+    //             window.onresize = function() {
+    //                 mapChart2.resize();
+    //             }
+    //         }, 200)
+			 </script>
+			 <!-- 地图 End-->
+			 <!-- 饼图 -->
+		   <script type="text/javascript">
+		   	 var myPie = echarts.init(document.getElementById('myPie'));
+		   	 option = {
+   
+   
+				    legend: {
+				       
+				        left: 'left',
+				        data: ['新访客','老访客']
+				    },
+				    series : [
+				        {
+				            name: '访问来源',
+				            type: 'pie',
+				            radius : '55%',
+				            center: ['50%', '60%'],
+				            hoverAnimation: false,
+				             label: {
+				            normal: {
+				                show: false
+				            }
+				        },
+				            data:[
+				                {value:335, name:'新访客',itemStyle: {normal: { color: '#2062e6'}}},
+				                {value:110, name:'老访客',itemStyle: {normal: { color: '#f3d024'}}},
+				               
+				            ],
+				            itemStyle: {
+				                emphasis: {
+				                    shadowBlur: 10,
+				                    shadowOffsetX: 0,
+				                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+				                }
+				            }
+				        }
+				    ]
+				};
+		   	 myPie.setOption(option);
+		   </script>
+			 <!-- 饼图 End-->
+			 <!-- 消费层级中的柱状图 -->
+			<script type="text/javascript">
+			var payNew = echarts.init(document.getElementById('payNew'));
+			var payOld = echarts.init(document.getElementById('payOld'));	
+           // var unpay = echarts.init(document.getElementById('unpay'));
+            var data2=[{value:300},{value:8.7},{value:7.0},{value: 23.2},{value:40.0},{value:100.0}];
+            var data3=[ {value:80}, {value:120}, {value:130.0}, {value:30.0}, {value:220.0}, {value:80}]
+      
+             // 颜色填充
+                     echarts.util.each(data3, function(item, index) {
+                         item.itemStyle = {
+                             normal: {
+                                 color:'#ffd791'
+                             }
+                         };
+                     });
+                      echarts.util.each(data2, function(item, index) {
+                         item.itemStyle = {
+                             normal: {
+                                 color:'#ffd791'
+                             }
+                         };
+                     });
+            //option
+			function getPayOption(data){
+               var option = {
+                
+                tooltip : {
+
+                triggerOn:'click',
+                trigger: 'item',
+               position:function (pos, params, dom, rect, size) {
+                    
+                   
+               		return {top:rect.y-70,left:pos[0]-rect.width*2}
+                 
+                },	
+                backgroundColor :'#ffffff',
+                borderColor:'#cccccc',
+                borderWidth :1,
+                textStyle :{
+                    color:'#282828'
+                },
+                formatter:function(params){
+                    var res=params.name+'<br>'+'占比:'+params.value+'%';
+                    
+                    return res
+                },
+                alwaysShowContent :true
+                },
+               grid: {
+                    left: '1%',
+                    right: '1%',
+                    bottom: '1%',
+                    top:0,
+                    containLabel: false
+                   
+                },
+               
+                xAxis: [
+                     {  
+                        type : 'category',
+                        data : ['0-45.0', '45.0-90.0', '90.0-180.0', '180.0-340.0','340.0-540.0','540.0-640.0'],
+                        axisTick: {
+                           
+                            show:false
+                        },
+                        axisLabel :{
+                            show:false,
+                            interval :0
+                        },
+                        splitLine:{show: false},//去除网格线
+                        //splitArea : {show : true}//保留网格区域
+                    }
+                ],
+                yAxis: [ 
+                    {   
+                        show:false,
+                        type : 'value',
+                        splitLine:{show: false},//去除网格线
+                        splitArea : {show : true}//保留网格区域
+                       
+                    }
+                  ],      
+                
+                series: [
+                    {
+                        name:'',
+                        type:'bar',
+                       
+                        data:data,
+
+                        
+
+                    }
+                    
+                ]
+            };
+            return option
+            };
+
+		
+			
+            //数据排序 选出最大值将该值的颜色改为深黄色，若已经筛选出最大值，请自行在最大值data的itemStyle中的normal的color中修改
+            function sortData(op){
+            var tp=0;
+            var imax=0;
+			for (var i = 0; i <op.series[0].data.length-1; i++) {
+					if (op.series[0].data[imax].value > op.series[0].data[i+1].value) {
+                       imax=imax;
+                       tp=op.series[0].data[imax].value;
+					}else{
+						imax=i+1;
+						tp=op.series[0].data[i+1].value;
+					}
+				};
+               
+                op.series[0].data[imax].itemStyle.normal.color="#ffa60b"
+                var md={tp:tp,imax:imax}
+                return md
+			};
+            sortData(getPayOption(data2));
+
+          //  console.log(sortData(getPayOption(data2)))
+            sortData(getPayOption(data3));
+          
+            //点击柱状图数据时变色
+             	
+			payNew.on('click',function (params){
+                
+           
+                var data=getPayOption(data2).series[0].data;
+                for(var i=0;i<data.length;i++){
+                    if (data[i].value==sortData(getPayOption(data2)).tp) {//判断此值是否为最大值，最大值时颜色为深黄色
+                    data[i].itemStyle.normal.color="#ffa60b";
+                    }else{
+                    data[i].itemStyle.normal.color="#ffd791";   
+                    }
+                  if(data[i].value==params.value){
+                    data[i].itemStyle.normal.color="#fa6a00";
+                  }
+
+               }
+               
+            payNew.setOption(getPayOption(data2));
+                
+            });
+            payOld.on('click',function (params){
+                
+              
+                var data=getPayOption(data3).series[0].data;
+                for(var i=0;i<data.length;i++){
+                    if (data[i].value==sortData(getPayOption(data3)).tp) {//判断此值是否为最大值，最大值时颜色为深黄色
+                    data[i].itemStyle.normal.color="#ffa60b";
+                    }else{
+                    data[i].itemStyle.normal.color="#ffd791";   
+                    }
+                  if(data[i].value==params.value){
+                    data[i].itemStyle.normal.color="#fa6a00";
+                  }
+
+               }
+               
+            payOld.setOption(getPayOption(data3));
+                
+            });
+				//console.log(getPayOption(data2).tooltip.position)	
+			payNew.setOption(getPayOption(data2));
+            payOld.setOption(getPayOption(data3));
+			payNew.dispatchAction({//默认显示最大值tooltip
+           		type: 'showTip',
+            	seriesIndex: 0,    // 因为只有一组数据，所以此处应为0
+            	dataIndex: sortData(getPayOption(data2)).imax ,      //显示的最大值
+            	position:function (pos, params, dom, rect, size) {
+                    
+                    // if (params.dataIndex==3) {
+                    //  console.log(dom)
+                    // }
+               return {bottom:rect.y+10,left:pos[0]-rect.width*2}
+                 
+                }	
+        	});
+            payOld.dispatchAction({//默认显示最大值tooltip
+                type: 'showTip',
+                seriesIndex: 0,    // 因为只有一组数据，所以此处应为0
+                dataIndex: sortData(getPayOption(data3)).imax ,      //显示的最大值
+                position:function (pos, params, dom, rect, size) {
+                    
+                    // if (params.dataIndex==3) {
+                    //  console.log(dom)
+                    // }
+               return {bottom:rect.y+10,left:pos[0]-rect.width*2}
+                 
+                }             
+            });
+
+			</script>
+			<!-- 消费层级中的柱状图 End-->
+			<!-- 访客对比-消费层级性别line数据对齐 -->
+			<script type="text/javascript">
+				
+				window.onload=function(){
+					// var h1=$(".line").children("li:first").width();
+					// var h2=$(".line").children(".max-part").width();
+					// var h3=$(".line").children("li:last").width();
+					// var w1=$(".line-data.male").width();
+					// var w2=$(".line-data.max-data").width();
+					// var w3=$(".line-data.unknow").width();
+					// var m=$(".line-data.male").parent("li").width()*0.1;
+					// $(".line-data.male").css("left",h1/2-w1/2+m+'px' );
+					// $(".line-data.max-data").css("left",h1+h2/2-w2/2+m+'px' );
+					// $(".line-data.unknow").css("left",h1+h2+h3/2-w3/2+m+'px' )
+					function setPos(obj){
+					var h1=obj.children("ul").children("li:first").width();
+					var h2=obj.children("ul").children(".max-part").width();
+					var h3=obj.children("ul").children("li:last").width();
+					var w1=obj.children(".line-data.male").width();
+					var w2=obj.children(".line-data.max-data").width();
+					var w3=obj.children(".line-data.unknow").width();
+					var m=obj.width()*0.1;
+					obj.children(".line-data.male").css("left",h1/2-w1/2+m+'px' );
+					obj.children(".line-data.max-data").css("left",h1+h2/2-w2/2+m+'px' );
+					obj.children(".line-data.unknow").css("left",h1+h2+h3/2-w3/2+m+'px' )
+					}
+					var aLi=$("#cd").children("li");
+
+					for (var i = 0; i<aLi.length; i++) {
+						if (i>0) {
+							//console.log($(aLi[i]).html())
+							setPos($(aLi[i]))
+						}
+					};
+					
+				}
+			</script>
+			<!-- 访客对比-消费层级性别line数据对齐 End-->
+			<!-- 访客对比-消费层级年龄echarts-->
+			<script type="text/javascript">
+				var ring1 = echarts.init(document.getElementById('ring1'));
+                var ring2 = echarts.init(document.getElementById('ring2'));
+                var ring3 = echarts.init(document.getElementById('ring3'));
+				//  颜色集合
+				  var colorList = [
+				    '#97ce68', '#a6d57f', '#b6dd95', '#c6e4ac', '#d5ebc3', '#e5f3d9', '#f2f9eb'];
+				//  数据填充
+				 var ringData1 = [{
+				     value: 55,
+				     name: '18-25岁'
+				 }, {
+				     value: 20,
+				     name: '26-30岁'
+				 }, {
+				     value: 10,
+				     name: "31-35岁"
+				 },{
+				     value: 5,
+				     name: '36-40岁'
+				 }, {
+				     value: 40,
+				     name: '41-50岁',
+				     selected:true,
+
+
+				 }, {
+				     value: 15,
+				     name: "51岁以上"
+				 }, {
+				     value: 5,
+				     name: "蒙面侠"
+
+				 }];
+                 var ringData2 = [{
+                     value: 55,
+                     name: '18-25岁'
+                 }, {
+                     value: 20,
+                     name: '26-30岁'
+                 }, {
+                     value: 10,
+                     name: "31-35岁"
+                 },{
+                     value: 5,
+                     name: '36-40岁'
+                 }, {
+                     value: 40,
+                     name: '41-50岁',
+                     selected:true,
+
+
+                 }, {
+                     value: 15,
+                     name: "51岁以上"
+                 }, {
+                     value: 5,
+                     name: "蒙面侠"
+
+                 }];
+                 var ringData3 = [{
+                     value: 55,
+                     name: '18-25岁'
+                 }, {
+                     value: 20,
+                     name: '26-30岁'
+                 }, {
+                     value: 10,
+                     name: "31-35岁"
+                 },{
+                     value: 5,
+                     name: '36-40岁'
+                 }, {
+                     value: 40,
+                     name: '41-50岁',
+                     selected:true,
+
+
+                 }, {
+                     value: 15,
+                     name: "51岁以上"
+                 }, {
+                     value: 5,
+                     name: "蒙面侠"
+
+                 }];
+                 // 饼图颜色填充
+				 echarts.util.each(ringData1, function(item, index) {
+				     item.itemStyle = {
+				         normal: {
+				             color: colorList[index]
+				         }
+				     };
+				 });
+                 echarts.util.each(ringData2, function(item, index) {
+                     item.itemStyle = {
+                         normal: {
+                             color: colorList[index]
+                         }
+                     };
+                 });
+                 echarts.util.each(ringData3, function(item, index) {
+                     item.itemStyle = {
+                         normal: {
+                             color: colorList[index]
+                         }
+                     };
+                 });
+				 // option
+				function getPieOption(data){
+                  var  option = {
+                    
+                    tooltip : {
+                        
+                        triggerOn:'click',
+                        trigger: 'item',
+                        position: ['38%', '35%'],
+                        formatter:function(params){
+                            //console.log(params)
+                            return params.name+'<br>'+params.percent+'%'
+                         },
+                        backgroundColor :'rgba(255,255,255,0.1)',
+                        borderColor:'#ffffff',
+                        textStyle :{
+                            color:'#282828'
+                        },             
+                        alwaysShowContent :true
+                    },
+                    backgroundColor:'#ffffff',
+                  
+                     series: [{
+                         hoverAnimation: false, //设置饼图默认的展开样式
+                         radius: [40, 70],
+                         name: 'pie',
+                         type: 'pie',
+                         selectedMode: 'single',
+                         selectedOffset: 9, //选中是扇区偏移量
+                         clockwise: true,
+                         startAngle: 90,
+                         label: {
+                             normal: {
+                                 show: false
+                             }
+                         },
+                         labelLine: {
+                             normal: {
+                                 show: false
+                             }
+                         },
+                          itemStyle: {
+                            normal: {
+                                borderWidth: 3,
+                                borderColor: '#ffffff',
+                            },
+                            emphasis: {
+                                borderWidth: 0,
+                                shadowBlur: 5,
+                                shadowOffsetX: 0,
+                                shadowColor: 'rgba(0, 0, 0, 0.2)'
+                            }
+                        },
+                         data: data
+                     }]
+                 };
+                 return option
+                }
+
+				  ring1.setOption(getPieOption(ringData1), true);
+                  ring2.setOption(getPieOption(ringData2), true);
+                  ring3.setOption(getPieOption(ringData3), true);
+
+                // 默认显示的提示框
+				  ring1.dispatchAction({//默认显示最大值tooltip
+               		type: 'showTip',
+                	seriesIndex: 0,    // 因为只有一组数据，所以此处应为0
+                	dataIndex: 1 ,      //显示的最大值
+                					
+            	   });
+                  ring2.dispatchAction({//默认显示最大值tooltip
+                    type: 'showTip',
+                    seriesIndex: 0,    // 因为只有一组数据，所以此处应为0
+                    dataIndex: 1 ,      //显示的最大值
+                                
+                   });
+                  ring3.dispatchAction({//默认显示最大值tooltip
+                    type: 'showTip',
+                    seriesIndex: 0,    // 因为只有一组数据，所以此处应为0
+                    dataIndex: 1 ,      //显示的最大值
+                                  
+                   });
+			</script>
+			<!--访客对比-营销偏好  -->
+			<script type="text/javascript">
+			var container=$(".cli").children(".circle");
+			var data=[['聚划算','天天特价','宝贝优惠券','搭配套餐','包邮'],['聚划算','包邮'],['天天特价','宝贝优惠券','搭配套餐']];
+			
+			for (var i = 0; i < container.length; i++) {
+				var html='';
+				for (var j = 0; j < data[i].length; j++) {
+					html+='<p class="child child_'+j+'"><span>'+data[i][j]+'</span></p>'	
+				};
+				$(container[i]).html(html)
+			};
+
+			</script>
+			
+
+			<!-- 访客对比-营销偏好 End-->
+			<!-- 访客对比-消费层级年龄 End-->
+			<script type="text/javascript">
+				$(".pbtn").on("click",function(){
+					if ($(this).hasClass("icon-plus-sign")) {
+						$(this).removeClass("icon-plus-sign");
+						$(this).addClass("icon-minus-sign");
+						$(this).parents(".source_data_show").siblings(".source_data_hide").show()
+					}else{
+						$(this).removeClass("icon-minus-sign");
+						$(this).addClass("icon-plus-sign");
+						$(this).parents(".source_data_show").siblings(".source_data_hide").hide()
+					}
+				})
+			</script>
+
+			
+</body>
+
+</html>
+       
+
+
+ 
